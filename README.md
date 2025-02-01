@@ -1,2 +1,74 @@
-# Network_Visualization_and_Analysis
-Network analysis of AI adoption patterns in investment banking trading floors. Includes community detection, centrality analysis, and strategic recommendations for promoting AI tool adoption. Python-based analysis with visualization.
+# AI Adoption Network Analysis in Investment Banking
+
+**Project Background**
+
+While artificial intelligence technologies offer transformative potential across industries, many organizations face significant challenges in translating AI initiatives from concept to reality. The implementation gap in AI adoption stems from several key factors:
+
+- Operational Disruption: Integration of AI systems often requires substantial changes to existing workflows
+- Talent Gap: Limited availability of specialists with AI expertise
+- Compliance Challenges: Complex regulatory requirements and ethical considerations
+- Professional Resistance: Particularly in knowledge-intensive sectors, where experts may view AI as a potential threat
+
+In the investment banking sector, understanding how traders perceive and interact with AI technologies is crucial for successful implementation. This project specifically examines these dynamics within trading floor networks.
+
+**Project Overview**
+
+This project analyzes network dynamics and node behavior patterns within an investment banking trading floor network, focusing on AI tool adoption and trader interactions. The analysis aims to understand and promote the adoption of AI tools for securities evaluation among traders.
+
+**Objective**
+
+The primary goal is to assist a large investment bank in promoting AI tool adoption by:
+
+- Understanding and addressing traders' concerns about AI
+- Analyzing network structures and interaction patterns
+- Identifying influential nodes and community structures
+- Developing strategies for AI integration
+
+**Dataset Description**
+
+The analysis is based on a comprehensive survey conducted at a major trading floor in Canary Wharf. The dataset (trading_floor.xml) encompasses responses from 192 traders and includes:
+
+**Data Components:**
+
+**1) Knowledge Exchange Network**
+
+- the undirected network of knowledge exchange between traders (traders A and B are connected when A says he/she shares technical and industry knowledge with B and vice versa)
+- Edge creation based on mutual technical and industry knowledge sharing
+- Represents organic information flow within the trading floor
+
+
+**2) AI Impact Assessment**
+
+- Individual trader's opinion about AI's contribution to their work and effectiveness in evaluating securities
+- Scale: 1 (minimal impact) to 10 (significant impact)
+- Stored as node attribute 'ai'
+
+
+**3) Spatial Information**
+
+- Trading floor divided into six zones
+- Each zone contains 32 traders (16 per side)
+- Trader positions mapped using x-pos and y-pos coordinates
+- Enables spatial analysis of AI adoption patterns
+
+**Features**
+
+- Network structure analysis
+- Community detection using Louvain algorithm
+- Centrality measures calculation
+- Opinion distribution visualization
+- Comparative network analysis
+- Spatial pattern analysis
+
+**Technologies Used**
+
+- Python 3.8+
+- NetworkX for graph analysis
+- Pandas for data manipulation
+- Matplotlib/Seaborn for visualization
+- Community detection algorithms
+- Statistical analysis libraries
+
+**Contributing**
+
+Feel free to fork this repository and submit pull requests. For major changes, please open an issue first to discuss the proposed changes.
